@@ -1,0 +1,6 @@
+D:\aserfend\workSpace\repos\projects\TryKeyboardEnum\TryKeyboardEnum\bin\Debug\TryKeyboardEnum.exe
+D:\aserfend\workSpace\repos\projects\TryKeyboardEnum\TryKeyboardEnum\bin\Debug\TryKeyboardEnum.pdb
+D:\aserfend\workSpace\repos\projects\TryKeyboardEnum\TryKeyboardEnum\obj\Debug\TryKeyboardEnum.csproj.CoreCompileInputs.cache
+D:\aserfend\workSpace\repos\projects\TryKeyboardEnum\TryKeyboardEnum\obj\Debug\TryKeyboardEnum.exe
+D:\aserfend\workSpace\repos\projects\TryKeyboardEnum\TryKeyboardEnum\obj\Debug\TryKeyboardEnum.pdb
+D:\aserfend\workSpace\repos\projects\TryKeyboardEnum\TryKeyboardEnum\obj\Debug\TryKeyboardEnum.csprojResolveAssemblyReference.cache
