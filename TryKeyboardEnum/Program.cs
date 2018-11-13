@@ -157,6 +157,7 @@ namespace TryKeyboardEnum
 			//Console.WriteLine(string.Format("目标窗体Handle={0}", keyHdl.Target.ToString("X")));
 			var inputBox = keyHdl.GetTarget(IntPtr.Zero, "TEdit", "");//找到输入框
 			inputBox = keyHdl.GetTarget(inputBox.Target, "TEdit", "");//找到输入框
+			
 			//Console.WriteLine(string.Format("输入框Handle={0}", inputBox.Target.ToString("X")));
 			//Console.WriteLine("尝试密码:" + tmp);
 			inputBox.SetText(tmp);//设置密码

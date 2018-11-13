@@ -13,7 +13,8 @@ namespace TryKeyboardEnum
 		//private static extern int SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
 		[DllImport("user32.dll", EntryPoint = "SendMessage")]
 		static extern IntPtr SendMessage(IntPtr hWnd, uint Msg,IntPtr wParam, StringBuilder  lParam);
-
+		[DllImport("user32.dll", EntryPoint = "SendMessage")]
+		static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, int wParam, StringBuilder lParam);
 		[DllImport("user32.dll", EntryPoint = "SendMessage")]
 		static extern IntPtr KeyEvent(IntPtr hWnd, uint Msg, byte lParam, IntPtr wParam);
 		[DllImport("User32.dll", EntryPoint = "FindWindowEx")]
@@ -44,6 +45,12 @@ namespace TryKeyboardEnum
 		public void FirstChildWindow()
 		{
 			Target = GetWindow(Target, GW_CHILD);
+		}
+		public string GetText(int bufferLength=1024)
+		{
+			StringBuilder buffer = new StringBuilder(bufferLength);
+			SendMessage(this.target, WM_GETTEXT, bufferLength, buffer);
+			return buffer.ToString();
 		}
 		#region GetTarget
 		public WinMessager GetTarget(IntPtr hwndParent, IntPtr hwndChildAfter, string lpClassName, string lpWindowName) => new WinMessager(FindWindowEx(hwndParent, hwndChildAfter, lpClassName, lpWindowName));
